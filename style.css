@@ -1,0 +1,420 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+   
+}
+
+
+header{
+    height: 10vh;
+    width: 100%;
+    background: black;
+    color: rgb(242, 241, 243);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;                                                                          
+    text-transform: uppercase;
+    position: fixed;
+}
+
+header h1{
+    text-transform: capitalize;
+    border-top: 1px solid red;
+    border-radius: 100px 0;
+    margin-top: 1px;
+}
+
+header sub{
+    font-size: 14px;
+    background: rgba(45, 252, 26, 0.671);
+    padding: 4px;
+}
+
+header #shutdown{
+    float: left;
+    background: red;
+    border: none;
+    color: white;
+}
+
+
+
+
+.container{
+    height: 90vh;
+    width: 100%;
+    background: rgb(233, 231, 231);;
+    position: relative;
+    top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container .box{
+    height: 90%;
+    width: 90%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .first-section{
+   
+    height: 77%;
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.first-section .btn{
+     height: 10vh;
+     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+button{
+    
+    height: 30px;
+    width: 80px;
+    border: none;
+    box-shadow: 0 0 7px #131313;
+    transition: all 0.1s ease-in-out;
+}
+button:hover{
+    opacity: 0.9;
+}
+button:active {
+    transform: scale(0.9);
+  }
+
+  
+#add{
+    background: chartreuse;
+}
+#delete{
+
+    background: rgb(255, 43, 43);
+    color: white;
+}
+
+
+.input-txt{
+    color: green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    
+    border: none;
+    outline: none;
+    box-shadow:  0 0 1px #131313;
+    margin-right: 66px;
+    padding: 9px;
+}
+
+
+.box .second-section{
+    height: 63%;
+    width: 90%;
+    max-width: 600px;
+    background: rgb(230, 230, 236);
+    box-shadow: 0 0 20px #131313;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.second-section .title{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    color: rgb(20, 5, 0);
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 30px;
+    margin-top: auto;
+    padding: 2px 0;
+    transform: scale(0.9);
+    
+}
+
+.second-section .list-container{
+    background: rgb(253, 253, 255);
+    height: 89%;
+    width: 97%;
+    margin: auto;
+    overflow-y: scroll;
+    transform: scale(0.9);
+}
+
+.list-container li {
+    font-size: 20px;
+    padding: 20px;
+    width: 100%;
+    color: rgb(83, 78, 78);
+     background: rgba(45, 252, 26, 0.671);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 840px) {
+
+    
+header h1{
+    font-size: 27px;
+    text-transform: capitalize;
+    border-top: 1px solid red;
+    border-radius: 100px 0;
+    margin-top: 1px;
+}
+
+header sub{
+    font-size: 9px;
+    background: rgba(45, 252, 26, 0.671);
+    padding: 4px;
+}
+
+header #shutdown{
+    float: left;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 11px;
+    height: 24px;
+    width: 68px;
+}
+
+   
+    .container .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+    }
+
+    .box .first-section{
+        align-self: center;
+        height: 20%;
+        width: 100%;
+    }
+
+    .box .second-section{
+        height: 63%;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+
+        
+header h1{
+    font-size: 27px;
+    text-transform: capitalize;
+    border-top: 1px solid red;
+    border-radius: 100px 0;
+    margin-top: 1px;
+}
+
+header sub{
+    font-size: 9px;
+    background: rgba(45, 252, 26, 0.671);
+    padding: 4px;
+}
+
+header #shutdown{
+    float: left;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 11px;
+    height: 24px;
+    width: 68px;
+}
+
+
+    .container .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+    button{
+    
+        height: 28px;
+        width: 70px;
+        border: none;
+        box-shadow: 0 0 7px #131313;
+        transition: all 0.1s ease-in-out;
+    }
+
+    .input-txt{
+    
+        color: green;
+        width: 55%;
+        margin-left: 25px;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input{
+        
+        padding: 6px;
+    }
+    .box .first-section{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        height: 27%;
+        
+    }
+    .box .first-section{
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .first-section .btn{
+        display: flex;
+        flex-direction: column;
+        column-gap: 11px;
+    }
+
+    .box .second-section{
+        width: 74%;
+    }
+    
+}
+
+
+.second-section .title{
+  
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 22px;
+    
+    
+}
+
+.second-section .list-container{
+    background: rgb(253, 253, 255);
+    height: 89%;
+    width: 97%;
+    margin: auto;
+    overflow-y: scroll;
+    transform: scale(0.9);
+}
+
+.list-container li {
+    font-size: 15px;
+    padding: 14px;
+    width: 100%;
+    color: rgb(83, 78, 78);
+     background: rgba(45, 252, 26, 0.671);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 320px) {
+
+    
+        
+header h1{
+    font-size: 23px;
+    text-transform: capitalize;
+    border-top: 1px solid red;
+    border-radius: 100px 0;
+    margin-top: 1px;
+}
+
+header sub{
+    font-size: 8px;
+    background: rgba(45, 252, 26, 0.671);
+    padding: 4px;
+}
+
+header #shutdown{
+    float: left;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 8px;
+    height: 20px;
+    width: 48px;
+}
+
+    .container .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .input-txt{
+        color: green;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    input{
+        margin-left: 43px;
+        padding: 8px;
+    }
+
+    .box .first-section{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        height: 27%;
+        
+    }
+    .box .first-section{
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .first-section .btn{
+        display: flex;
+        flex-direction: row;
+        column-gap: 11px;
+        
+
+    }
+
+    
+}
